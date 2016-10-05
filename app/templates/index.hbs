@@ -1,0 +1,14 @@
+<h1>home page</h1>ember g route about
+<div class="row">
+{{#each model as |book|}}
+  <div class="col-lg-3 col-sm-6 col-xs-12">
+    <div class="thumbnail">
+    {{ember-cli-holderjs src_url="holder.js/100px200" class="img-responsive"}}ember s -p 3000
+      <div class="caption">
+        <h4>{{book.title}} <small>{{book.published}}</small></h4>
+        <p>{{book.author}}</p>
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>
